@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = CaveatPatchKids::VERSION
   gem.authors       = ["Josh Nichols"]
   gem.email         = ["josh@technicalpickles.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Manage caveatPatchor.js files for Propane}
+  gem.summary       = %q{CaveatPatchKids is a tool for generating, sharing, and maintaing caveatPatchor.js files for use with Propane, powered by sprockets and other fun stuff}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
