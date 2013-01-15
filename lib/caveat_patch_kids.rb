@@ -46,5 +46,12 @@ END
       say_status "bloom", "#{unsupported_dir}/#{basename}"
       caveat_patchor.write_to "#{unsupported_dir}/#{basename}"
     end
+
+    desc "till", "till planted ~/.caveat_patch_kids"
+    def till
+      caveat_patchor = Pathname.new("~/Library/Application Support/Propane/unsupported/caveatPatchor.js").expand_path
+
+      remove_file caveat_patchor.to_s
+    end
   end
 end
