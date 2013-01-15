@@ -11,12 +11,20 @@ module CaveatPatchKids
 
   class App < Thor
     include Thor::Actions
-    #desc "plant", "Plant a basic ~/.caveat_patch_kids"
-    #def plant 
-    #end
+    desc "plant", "Plant a basic ~/.caveat_patch_kids"
+    def plant 
+      create_file  "~/.caveat_patch_kids/caveatPatchor.js", <<END
+//= require caveat_patch_kids
+//
+//= require caveat_patch_kids/display_avatars
+//= require caveat_patch_kids/stylize_diffs
+//
+//= require_self
+END
+    end
 
-    desc "generate", "generate caveatPatchor.js using your plantted ~/.caveat_patch_kids"
-    def generate
+    desc "bloom", "bloom a caveatPatchor.js using your planted ~/.caveat_patch_kids"
+    def bloom
       root_dir = Pathname.new(__FILE__).basename + '..'
       sprockets = Sprockets::Environment.new(root_dir)
 
@@ -35,6 +43,7 @@ module CaveatPatchKids
 
       FileUtils.mkdir_p(unsupported_dir.to_s)
 
+      say_status "bloom", "#{unsupported_dir}/#{basename}"
       caveat_patchor.write_to "#{unsupported_dir}/#{basename}"
     end
   end
