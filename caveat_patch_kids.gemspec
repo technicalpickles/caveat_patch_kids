@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["josh@technicalpickles.com"]
   gem.description   = %q{Manage caveatPatchor.js files for Propane}
   gem.summary       = %q{CaveatPatchKids is a tool for generating, sharing, and maintaing caveatPatchor.js files for use with Propane, powered by sprockets and other fun stuff}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/technicalpickles/caveat_patch_kids"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
