@@ -25,7 +25,7 @@ END
 
     desc "bloom", "bloom a caveatPatchor.js using your planted ~/.caveat_patch_kids"
     def bloom
-      root_dir = Pathname.new(__FILE__).basename + '..'
+      root_dir = Pathname.new(__FILE__).dirname + '..'
       sprockets = Sprockets::Environment.new(root_dir)
 
       vendor_assets_dir = root_dir + 'vendor/assets'
