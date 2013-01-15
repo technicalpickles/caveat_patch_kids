@@ -10,14 +10,14 @@ Install in the usual way:
 
 ## Usage
 
-To start, plant a cavet patch:
+To start, plant a caveat patch:
 
     $ caveat-patch-kids plant
           create  /Users/yourface/.caveat_patch_kids/caveatPatchor.js
 
-This creates a basic caveatPatchor.js you can customize. Either drop you code at the bottom, or require scripts provided by CaveatPatchKids (see below).
+This creates a basic caveatPatchor.js you can customize using Sprockets directories. Either drop you code at the bottom, or require scripts provided by CaveatPatchKids.
 
-When you are happy with the results, bloom it:
+When you are happy with the code, bloom it:
 
     $ caveat-patch-kids bloom
            bloom  /Users/yourface/Library/Application Support/Propane/unsupported/caveatPatchor.js 
