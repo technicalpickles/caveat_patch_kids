@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+require 'caveat_patch_kids'
+
+root_dir = Pathname.new(__FILE__).basename + '..'
+logger = Logger.new($stdout)
+
+sprockets = Sprockets::Environment.new(root_dir) do |e|
+  e.logger = logger
+end
+
+vendor_assets_dir = root_dir + 'vendor/assets'
+scripts_dir = root_dir + 'scripts'
+home_dir = Pathname.new("~/.caveat_patch_kids")
+unsupported_dir = Pathname.new("~/Library/Application Support/Propane/unsupported/").expand_path
+
+sprockets.append_path vendor_assets_dir.to_s
+sprockets.append_path scripts_dir.to_s
+sprockets.append_path home_dir.expand_path.to_s
+
+caveat_patchor = sprockets.find_asset('caveatPatchor.js')
+
+prefix, basename = caveat_patchor.pathname.to_s.split('/')[-2..-1]
+
+FileUtils.mkdir_p(unsupported_dir.to_s)
+
+caveat_patchor.write_to "#{unsupported_dir}/#{basename}"
