@@ -1,6 +1,6 @@
 # CaveatPatchKids
 
-CaveatPatchKids is a tool for generating caveatPatchor.js files and for easily sharing snippets for use in caveatPatchor.js
+CaveatPatchKids is a tool for generating caveatPatchor.js files and for easily sharing snippets for use in [Propane](http://propaneapp.com/).
 
 ## Installation
 
