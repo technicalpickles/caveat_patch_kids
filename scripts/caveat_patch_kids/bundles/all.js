@@ -4,3 +4,4 @@
 //= require caveat_patch_kids/embiggen_message_history
 //= require caveat_patch_kids/stylize_nagios
 //= require caveat_patch_kids/stylize_diffs
+//= require caveat_patch_kids/embed_youtube
