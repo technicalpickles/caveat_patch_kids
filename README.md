@@ -39,6 +39,7 @@ These scripts are provided by CaveatPatchKids. Include them by updating ~/.cavea
 * caveat_patch_kids/embiggen_message_history: increase message history
 * caveat_patch_kids/stylize_diffs: colorize diffs with red/green
 * caveat_patch_kids/stylize_diffs: colorize nagios alerts
+* caveat_patch_kids/link_to_rdio_app: update rdio links to go to the Rdio app, instead of a browser
 
 The original caveatPatchor.js had a lot of mysterious and odd things. Those weren't included by default, but could be of use to someone, somewhere, or maybe just need some cleanup and documentation. See `scripts/caveat_patch_kids/unsupported` for the good.
 
@@ -46,7 +47,7 @@ The original caveatPatchor.js had a lot of mysterious and odd things. Those were
 
 For convience, a full bundles with several scripts are included. Require them like any other script:
 
-* caveat_patch_kids/bundles/all: all scripts (that aren't unsupported)
+* caveat_patch_kids/bundles/all: all scripts, except ones that aren't unspoorted or require specific things on your system (ie rdio) 
 * caveat_patch_kids/bundles/unsupported: all scripts, even ones unsupported. you probably shouldn't do this unless you are a crazy person
 
 ## Thanks
