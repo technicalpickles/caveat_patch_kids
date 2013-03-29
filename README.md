@@ -37,6 +37,7 @@ These scripts are provided by CaveatPatchKids. Include them by updating ~/.cavea
 
 * caveat_patch_kids/display_avatars: display a [Gravatar](http://www.gravatar.com/)  next to a user's name
 * caveat_patch_kids/display_cloudapp_images: display [CloudApp](http://getcloudapp.com/) images inline 
+* caveat_patch_kids/display_librato: adjust [librato](https://metrics.librato.com/) graph links to embed a live version of the graph
 * caveat_patch_kids/display_scout: display [Scout](https://scoutapp.com/) graph links as embeded graphs
 * caveat_patch_kids/embiggen_message_history: increase message history
 * caveat_patch_kids/stylize_diffs: colorize diffs with red/green
