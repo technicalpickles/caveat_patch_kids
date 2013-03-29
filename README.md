@@ -33,13 +33,15 @@ If something does break, and you really need to get back into Propane, you can t
 
 These scripts are provided by CaveatPatchKids. Include them by updating ~/.caveat_patch_kids/caveatPatchor.js like:
 
-    //= require caveat_patch_kids/the_scripts
+    //= require caveat_patch_kids/the_script
 
-* caveat_patch_kids/display_avatars: display gravatars next to user's
+* caveat_patch_kids/display_avatars: display a [Gravatar](http://www.gravatar.com/)  next to a user's name
+* caveat_patch_kids/display_cloudapp_images: display [CloudApp](http://getcloudapp.com/) images inline 
+* caveat_patch_kids/display_scout: display [Scout](https://scoutapp.com/) graph links as embeded graphs
 * caveat_patch_kids/embiggen_message_history: increase message history
 * caveat_patch_kids/stylize_diffs: colorize diffs with red/green
-* caveat_patch_kids/stylize_diffs: colorize nagios alerts
-* caveat_patch_kids/link_to_rdio_app: update rdio links to go to the Rdio app, instead of a browser
+* caveat_patch_kids/stylize_nagios: colorize nagios alerts
+* caveat_patch_kids/link_to_rdio_app: update [Rdio](http://rdio.com/) links to go to the Rdio app, instead of a browser
 
 The original caveatPatchor.js had a lot of mysterious and odd things. Those weren't included by default, but could be of use to someone, somewhere, or maybe just need some cleanup and documentation. See `scripts/caveat_patch_kids/unsupported` for the good.
 
